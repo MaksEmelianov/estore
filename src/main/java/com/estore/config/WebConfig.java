@@ -11,7 +11,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import java.util.Properties;
 
 @Configuration
-@PropertySource("classpath:private.yml")
+@PropertySource("classpath:private.properties")
 public class WebConfig implements WebMvcConfigurer {
 
     @Value("${mail.username}")

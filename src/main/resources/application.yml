@@ -4,5 +4,18 @@ server:
     context-path: /beta
 
 spring:
-  jackson:
-    serialization: false
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/estore
+    username: postgres
+    password: password
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+  thymeleaf:
+    encoding: UTF-8
+
+  #  jackson:
+  #    serialization: false

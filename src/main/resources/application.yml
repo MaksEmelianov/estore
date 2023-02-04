@@ -1,7 +1,7 @@
 server:
   port: 8080
-  servlet:
-    context-path: /beta
+#  servlet:
+#    context-path: /beta
 
 spring:
   datasource:

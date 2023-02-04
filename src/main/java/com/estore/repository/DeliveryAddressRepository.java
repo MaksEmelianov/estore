@@ -8,4 +8,5 @@ import java.util.List;
 
 @Repository
 public interface DeliveryAddressRepository extends CrudRepository<DeliveryAddress, Long> {
+    List<DeliveryAddress> findAllByUserId(Long id);
 }

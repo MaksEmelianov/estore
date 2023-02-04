@@ -5,6 +5,6 @@ import com.estore.entity.DeliveryAddress;
 import java.util.List;
 
 public interface DeliveryAddressService {
-    List<DeliveryAddress> getUserAddresses(Long userId);
-    DeliveryAddress getUserAddressById(Long id);
+    List<DeliveryAddress> getAddressesByUserId(Long userId);
+    DeliveryAddress getAddressById(Long id);
 }
